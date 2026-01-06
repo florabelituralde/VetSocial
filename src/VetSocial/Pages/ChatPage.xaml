@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    x:Class="VetSocial.Pages.ChatPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Chat">
+    <Grid RowDefinitions="Auto,*" Padding="12">
+        <CollectionView x:Name="Messages" Grid.Row="0" ItemsSource="{Binding Messages}" />
+        <Grid Grid.Row="1" ColumnDefinitions="*,Auto">
+            <Entry x:Name="MessageEntry" Placeholder="Type a message" />
+            <Button Text="Send" Grid.Column="1" Clicked="OnSendClicked" />
+        </Grid>
+    </Grid>
+</ContentPage>

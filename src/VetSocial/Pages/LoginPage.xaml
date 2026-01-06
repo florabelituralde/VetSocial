@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    x:Class="VetSocial.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Login">
+    <VerticalStackLayout Padding="24" Spacing="16">
+        <Label Text="Welcome" FontSize="28" FontAttributes="Bold" />
+        <Label Text="Verify with ID.me to continue"/>
+        <Button Text="Login with ID.me" Clicked="OnLoginClicked" />
+    </VerticalStackLayout>
+</ContentPage>
