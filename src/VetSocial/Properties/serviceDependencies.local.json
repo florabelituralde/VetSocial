@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "signalr1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('serviceConnectorResourceGroupName')]/providers/Microsoft.ServiceLinker/locations/eastus2/connectors/AzureSignalRConnectionString_5A2469445E",
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.SignalRService/SignalR/VetSocial",
+      "type": "signalr.azure",
+      "connectionId": "Azure:SignalR:ConnectionString",
+      "dynamicId": null
+    },
+    "appConfig1": {
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.AppConfiguration/configurationStores/VetSocialConfiguration",
+      "type": "appConfig.azure",
+      "connectionId": "AppConfig"
+    },
+    "secrets2": {
+      "secretStore": null,
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/VetSocialvault",
+      "type": "secrets.keyVault",
+      "connectionId": "VaultUri"
+    },
+    "appInsights1": {
+      "type": "appInsights.sdk"
+    }
+  }
+}
