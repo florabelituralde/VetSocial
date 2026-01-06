@@ -9,32 +9,20 @@
     Title="VetSocial">
 
     <ShellContent
-        Title="Dashboard"
+        Title="Welcome"
         Icon="{StaticResource IconDashboard}"
         ContentTemplate="{DataTemplate pages:MainPage}"
         Route="main" />
 
     <ShellContent
-        Title="Projects"
-        Icon="{StaticResource IconProjects}"
-        ContentTemplate="{DataTemplate pages:ProjectListPage}"
-        Route="projects" />
-
-    <ShellContent
-        Title="Manage Meta"
-        Icon="{StaticResource IconMeta}"
-        ContentTemplate="{DataTemplate pages:ManageMetaPage}"
-        Route="manage" />
+        Title="Login/SignUp"
+        ContentTemplate="{DataTemplate pages:LoginPage}"
+        Route="login" />
 
     <ShellContent
         Title="Feed"
         ContentTemplate="{DataTemplate pages:FeedPage}"
         Route="feed" />
-
-    <ShellContent
-        Title="Stories"
-        ContentTemplate="{DataTemplate pages:StoryViewerPage}"
-        Route="stories" />
 
     <ShellContent
         Title="Chat"

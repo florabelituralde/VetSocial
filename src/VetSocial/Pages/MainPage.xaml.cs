@@ -5,10 +5,15 @@ namespace VetSocial.Pages
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage(MainPageModel model)
+        public MainPage()
         {
             InitializeComponent();
-            BindingContext = model;
+        }
+
+        private async void OnGetStartedClicked(object sender, EventArgs e)
+        {
+            // Navigate to dashboard/feed route
+            await Shell.Current.GoToAsync("//feed");
         }
     }
 }
